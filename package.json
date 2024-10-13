@@ -8,7 +8,8 @@
     "start": "sass --watch src/scss:dist/css & live-server",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "jest"
   },
   "keywords": [],
   "author": "Noroff",
