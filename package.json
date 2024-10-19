@@ -11,7 +11,8 @@
     "format": "prettier --write .",
     "test": "jest",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "test:headless": "cypress run"
   },
   "keywords": [],
   "author": "Noroff",
