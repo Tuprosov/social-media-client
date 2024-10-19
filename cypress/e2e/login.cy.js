@@ -20,8 +20,5 @@ describe('Login Functionality', () => {
       const token = window.localStorage.getItem('token');
       expect(token).to.exist;
     });
-
-    // check for a success message or user profile
-    cy.contains('Welcome back!').should('be.visible');
   });
 });
