@@ -17,7 +17,8 @@ export default [
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:prettier/recommended',
-    'plugin:jest/recommended'
+    'plugin:jest/recommended',
+    'plugin:cypress/recommended'
   ),
   {
     languageOptions: {
@@ -25,6 +26,7 @@ export default [
         ...globals.browser,
         ...globals.node,
         ...globals.jest,
+        ...globals.cypress,
       },
 
       ecmaVersion: 2020,
