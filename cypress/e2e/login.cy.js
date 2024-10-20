@@ -5,9 +5,10 @@ describe('Login Functionality', () => {
   });
 
   it('should log in successfully with valid credentials', () => {
+    cy.get('form#registerForm button[type="reset"]').click();
     // Enter valid credentials
-    cy.get('form#loginForm input[name="email"]').type('validuser@example.com'); // Replace with valid test email
-    cy.get('form#loginForm input[name="password"]').type('ValidPassword123'); // Replace with valid test password
+    cy.get('form#loginForm input[name="email"]').type('test@stud.noroff.no'); // Replace with valid test email
+    cy.get('form#loginForm input[name="password"]').type('sh4500658'); // Replace with valid test password
 
     // Submit the form
     cy.get('form#loginForm button[type="submit"]').click();
