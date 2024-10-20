@@ -4,9 +4,11 @@ describe('Invalid login attempts', () => {
   });
 
   it('should not allow the user to submit the login form with invalid credentials and show an error message', () => {
+    cy.get('form#registerForm button[type="reset"]').click();
+
     // Simulate entering invalid email and password into the login form
     cy.get('form#loginForm input[name="email"]').type(
-      'invaliduser@example.com'
+      'invaliduser@stud.noroff.no'
     );
     cy.get('form#loginForm input[name="password"]').type('InvalidPassword');
 
