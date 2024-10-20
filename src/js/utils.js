@@ -1,4 +1,3 @@
-export function showErrorMessage() {
-  const message = document.querySelector('.error-massage');
+export function showErrorMessage(message) {
   message.style.display = 'block';
 }

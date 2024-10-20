@@ -17,6 +17,6 @@ export async function login(email, password) {
     save('profile', profile);
     return profile;
   }
-  showErrorMessage();
+  showErrorMessage(document.querySelector('.error-message'));
   throw new Error(response.statusText);
 }
